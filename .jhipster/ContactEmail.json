@@ -1,0 +1,36 @@
+{
+  "applications": ["repfabricContactGW", "repfabricContact"],
+  "changelogDate": "20221206203429",
+  "clientRootFolder": "repfabricContact",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contact_email",
+  "fields": [
+    {
+      "fieldName": "emailType",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "repfabricContact",
+  "name": "ContactEmail",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contact",
+      "relationshipName": "contact",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

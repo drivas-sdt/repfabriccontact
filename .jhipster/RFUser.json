@@ -1,0 +1,27 @@
+{
+  "applications": ["repfabricContactGW", "repfabricContact"],
+  "changelogDate": "20221206203629",
+  "clientRootFolder": "repfabricContact",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "rf_user",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "repfabricContact",
+  "name": "RFUser",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

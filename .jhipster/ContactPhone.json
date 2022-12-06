@@ -1,0 +1,36 @@
+{
+  "applications": ["repfabricContactGW", "repfabricContact"],
+  "changelogDate": "20221206203529",
+  "clientRootFolder": "repfabricContact",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contact_phone",
+  "fields": [
+    {
+      "fieldName": "phoneType",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "repfabricContact",
+  "name": "ContactPhone",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contact",
+      "relationshipName": "contact",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

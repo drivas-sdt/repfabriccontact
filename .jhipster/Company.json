@@ -1,0 +1,44 @@
+{
+  "applications": ["repfabricContactGW", "repfabricContact"],
+  "changelogDate": "20221206202929",
+  "clientRootFolder": "repfabricContact",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "company",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "privTeam",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "repfabricContact",
+  "name": "Company",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "salesTeam",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "salesTeam",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "companyType",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "companyType",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

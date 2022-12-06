@@ -1,0 +1,155 @@
+{
+  "applications": ["repfabricContactGW", "repfabricContact"],
+  "changelogDate": "20221206203229",
+  "clientRootFolder": "repfabricContact",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contact",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "suffix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dept",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "managerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assistantName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referredBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "context",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isPrimary",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDelete",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "imagePAth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "refNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isGlobalContact",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isBounce",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isSync",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "repfabricContact",
+  "name": "Contact",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "company",
+      "relationshipName": "company",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "rFUser",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "salesTeam",
+      "relationshipName": "salesTeam",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "rFUser",
+      "relationshipName": "createrUser",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "rFUser",
+      "relationshipName": "updateUser",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "company",
+      "relationshipName": "parentCompany",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "companyRegion",
+      "relationshipName": "region",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Contact.
+    -->
+    <changeSet id="20221206203229-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="company_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__company_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="company"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="rf_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="sales_team_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__sales_team_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sales_team"/>
+
+        <addForeignKeyConstraint baseColumnNames="creater_user_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__creater_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="rf_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="update_user_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__update_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="rf_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="parent_company_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__parent_company_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="company"/>
+
+        <addForeignKeyConstraint baseColumnNames="region_id"
+                                 baseTableName="contact"
+                                 constraintName="fk_contact__region_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="company_region"/>
+    </changeSet>
+</databaseChangeLog>
